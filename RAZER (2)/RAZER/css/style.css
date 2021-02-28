@@ -2,6 +2,11 @@
     color: #00ff00;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: #111111;
     border-bottom: 1px solid #1D1D1D;
@@ -32,7 +37,6 @@ body{
 }
 section .container-fluid
 {
-    border:solid yellow;
     height: 100%;
     padding: 0;
 }
@@ -48,13 +52,50 @@ section .container-fluid
     height: 1fr;
 }
 
+#section4{
+    height: 1fr;
+}
+
 #form-contact{
     height: 1fr;
 }
+
+header
+{
+    transition: 1s ease;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+.list-unstyled li a
+{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    color:#009b00;
+}
+.list-unstyled li a:hover
+{
+    transition: 1s ease;
+    color:white;
+}
+
+footer
+{
+    background-color: #1D1D1D;
+}
+
 @media only screen and (max-width: 1000px)
 {
     .img-top
     {
         max-height: 15vw;
+    }
+    .list-unstyled li a
+    {
+       font-size: 3vw;
     }
 }
